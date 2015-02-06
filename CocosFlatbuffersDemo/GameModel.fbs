@@ -1,0 +1,24 @@
+namespace fbs;
+
+///skill model
+struct SkillModel {
+    skillId:int;
+    skillLevel:int;
+}
+
+table AchievementModel {
+    id:int;
+    step:int;
+}
+
+
+///game model
+table GameModel {
+    username:string;
+    level:long = 100;
+    skills:[SkillModel];
+    gold:int;
+    achievements:[AchievementModel];
+}
+
+root_type GameModel;

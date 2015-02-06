@@ -8,10 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		13EC03D31A849C1100671D7C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13EC03D21A849C1100671D7C /* main.cpp */; };
+		13EC044F1A849E6D00671D7C /* flatc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13EC04461A849E6D00671D7C /* flatc.cpp */; };
+		13EC04501A849E6D00671D7C /* idl_gen_cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13EC04481A849E6D00671D7C /* idl_gen_cpp.cpp */; };
+		13EC04511A849E6D00671D7C /* idl_gen_fbs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13EC04491A849E6D00671D7C /* idl_gen_fbs.cpp */; };
+		13EC04521A849E6D00671D7C /* idl_gen_general.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13EC044A1A849E6D00671D7C /* idl_gen_general.cpp */; };
+		13EC04531A849E6D00671D7C /* idl_gen_go.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13EC044B1A849E6D00671D7C /* idl_gen_go.cpp */; };
+		13EC04541A849E6D00671D7C /* idl_gen_text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13EC044C1A849E6D00671D7C /* idl_gen_text.cpp */; };
+		13EC04551A849E6D00671D7C /* idl_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13EC044D1A849E6D00671D7C /* idl_parser.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		13EC03CD1A849C1100671D7C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		13EC04391A849E0D00671D7C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +41,44 @@
 /* Begin PBXFileReference section */
 		13EC03CF1A849C1100671D7C /* CocosFlatbuffersDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CocosFlatbuffersDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EC03D21A849C1100671D7C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		13EC03F01A849C9500671D7C /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
+		13EC03F11A849C9500671D7C /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		13EC03F21A849C9500671D7C /* flatbuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flatbuffers.h; sourceTree = "<group>"; };
+		13EC03F31A849C9500671D7C /* flatc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flatc.cpp; sourceTree = "<group>"; };
+		13EC03F41A849C9500671D7C /* idl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idl.h; sourceTree = "<group>"; };
+		13EC03F51A849C9500671D7C /* idl_gen_cpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_gen_cpp.cpp; sourceTree = "<group>"; };
+		13EC03F61A849C9500671D7C /* idl_gen_fbs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_gen_fbs.cpp; sourceTree = "<group>"; };
+		13EC03F71A849C9500671D7C /* idl_gen_general.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_gen_general.cpp; sourceTree = "<group>"; };
+		13EC03F81A849C9500671D7C /* idl_gen_go.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_gen_go.cpp; sourceTree = "<group>"; };
+		13EC03F91A849C9500671D7C /* idl_gen_text.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_gen_text.cpp; sourceTree = "<group>"; };
+		13EC03FA1A849C9500671D7C /* idl_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_parser.cpp; sourceTree = "<group>"; };
+		13EC03FB1A849C9500671D7C /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		13EC04031A849D1C00671D7C /* GameModel.fbs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GameModel.fbs; sourceTree = "<group>"; };
+		13EC043B1A849E0D00671D7C /* flatc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = flatc; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EC04431A849E6D00671D7C /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
+		13EC04441A849E6D00671D7C /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		13EC04451A849E6D00671D7C /* flatbuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flatbuffers.h; sourceTree = "<group>"; };
+		13EC04461A849E6D00671D7C /* flatc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flatc.cpp; sourceTree = "<group>"; };
+		13EC04471A849E6D00671D7C /* idl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idl.h; sourceTree = "<group>"; };
+		13EC04481A849E6D00671D7C /* idl_gen_cpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_gen_cpp.cpp; sourceTree = "<group>"; };
+		13EC04491A849E6D00671D7C /* idl_gen_fbs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_gen_fbs.cpp; sourceTree = "<group>"; };
+		13EC044A1A849E6D00671D7C /* idl_gen_general.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_gen_general.cpp; sourceTree = "<group>"; };
+		13EC044B1A849E6D00671D7C /* idl_gen_go.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_gen_go.cpp; sourceTree = "<group>"; };
+		13EC044C1A849E6D00671D7C /* idl_gen_text.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_gen_text.cpp; sourceTree = "<group>"; };
+		13EC044D1A849E6D00671D7C /* idl_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_parser.cpp; sourceTree = "<group>"; };
+		13EC044E1A849E6D00671D7C /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		13EC04581A84A19800671D7C /* GameModel_generated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameModel_generated.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		13EC03CC1A849C1100671D7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13EC04381A849E0D00671D7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +91,9 @@
 		13EC03C61A849C1100671D7C = {
 			isa = PBXGroup;
 			children = (
+				13EC03EE1A849C9500671D7C /* external */,
 				13EC03D11A849C1100671D7C /* CocosFlatbuffersDemo */,
+				13EC043C1A849E0E00671D7C /* flatc */,
 				13EC03D01A849C1100671D7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				13EC03CF1A849C1100671D7C /* CocosFlatbuffersDemo */,
+				13EC043B1A849E0D00671D7C /* flatc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,10 +110,67 @@
 		13EC03D11A849C1100671D7C /* CocosFlatbuffersDemo */ = {
 			isa = PBXGroup;
 			children = (
+				13EC04581A84A19800671D7C /* GameModel_generated.h */,
 				13EC03D21A849C1100671D7C /* main.cpp */,
+				13EC04031A849D1C00671D7C /* GameModel.fbs */,
 			);
 			path = CocosFlatbuffersDemo;
 			sourceTree = "<group>";
+		};
+		13EC03EE1A849C9500671D7C /* external */ = {
+			isa = PBXGroup;
+			children = (
+				13EC03EF1A849C9500671D7C /* flatbuffers */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		13EC03EF1A849C9500671D7C /* flatbuffers */ = {
+			isa = PBXGroup;
+			children = (
+				13EC03F01A849C9500671D7C /* Android.mk */,
+				13EC03F11A849C9500671D7C /* CMakeLists.txt */,
+				13EC03F21A849C9500671D7C /* flatbuffers.h */,
+				13EC03F31A849C9500671D7C /* flatc.cpp */,
+				13EC03F41A849C9500671D7C /* idl.h */,
+				13EC03F51A849C9500671D7C /* idl_gen_cpp.cpp */,
+				13EC03F61A849C9500671D7C /* idl_gen_fbs.cpp */,
+				13EC03F71A849C9500671D7C /* idl_gen_general.cpp */,
+				13EC03F81A849C9500671D7C /* idl_gen_go.cpp */,
+				13EC03F91A849C9500671D7C /* idl_gen_text.cpp */,
+				13EC03FA1A849C9500671D7C /* idl_parser.cpp */,
+				13EC03FB1A849C9500671D7C /* util.h */,
+			);
+			path = flatbuffers;
+			sourceTree = "<group>";
+		};
+		13EC043C1A849E0E00671D7C /* flatc */ = {
+			isa = PBXGroup;
+			children = (
+				13EC04421A849E6D00671D7C /* flatbuffers */,
+			);
+			path = flatc;
+			sourceTree = "<group>";
+		};
+		13EC04421A849E6D00671D7C /* flatbuffers */ = {
+			isa = PBXGroup;
+			children = (
+				13EC04431A849E6D00671D7C /* Android.mk */,
+				13EC04441A849E6D00671D7C /* CMakeLists.txt */,
+				13EC04451A849E6D00671D7C /* flatbuffers.h */,
+				13EC04461A849E6D00671D7C /* flatc.cpp */,
+				13EC04471A849E6D00671D7C /* idl.h */,
+				13EC04481A849E6D00671D7C /* idl_gen_cpp.cpp */,
+				13EC04491A849E6D00671D7C /* idl_gen_fbs.cpp */,
+				13EC044A1A849E6D00671D7C /* idl_gen_general.cpp */,
+				13EC044B1A849E6D00671D7C /* idl_gen_go.cpp */,
+				13EC044C1A849E6D00671D7C /* idl_gen_text.cpp */,
+				13EC044D1A849E6D00671D7C /* idl_parser.cpp */,
+				13EC044E1A849E6D00671D7C /* util.h */,
+			);
+			name = flatbuffers;
+			path = external/flatbuffers;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -82,6 +192,23 @@
 			productReference = 13EC03CF1A849C1100671D7C /* CocosFlatbuffersDemo */;
 			productType = "com.apple.product-type.tool";
 		};
+		13EC043A1A849E0D00671D7C /* flatc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13EC043F1A849E0E00671D7C /* Build configuration list for PBXNativeTarget "flatc" */;
+			buildPhases = (
+				13EC04371A849E0D00671D7C /* Sources */,
+				13EC04381A849E0D00671D7C /* Frameworks */,
+				13EC04391A849E0D00671D7C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flatc;
+			productName = flatc;
+			productReference = 13EC043B1A849E0D00671D7C /* flatc */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +219,9 @@
 				ORGANIZATIONNAME = "Richie Yan";
 				TargetAttributes = {
 					13EC03CE1A849C1100671D7C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					13EC043A1A849E0D00671D7C = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
@@ -109,6 +239,7 @@
 			projectRoot = "";
 			targets = (
 				13EC03CE1A849C1100671D7C /* CocosFlatbuffersDemo */,
+				13EC043A1A849E0D00671D7C /* flatc */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +250,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				13EC03D31A849C1100671D7C /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13EC04371A849E0D00671D7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13EC04501A849E6D00671D7C /* idl_gen_cpp.cpp in Sources */,
+				13EC04541A849E6D00671D7C /* idl_gen_text.cpp in Sources */,
+				13EC044F1A849E6D00671D7C /* flatc.cpp in Sources */,
+				13EC04511A849E6D00671D7C /* idl_gen_fbs.cpp in Sources */,
+				13EC04531A849E6D00671D7C /* idl_gen_go.cpp in Sources */,
+				13EC04521A849E6D00671D7C /* idl_gen_general.cpp in Sources */,
+				13EC04551A849E6D00671D7C /* idl_parser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/external";
 			};
 			name = Debug;
 		};
@@ -210,6 +356,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/external";
+			};
+			name = Release;
+		};
+		13EC04401A849E0E00671D7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/external";
+			};
+			name = Debug;
+		};
+		13EC04411A849E0E00671D7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/external";
 			};
 			name = Release;
 		};
@@ -232,6 +399,16 @@
 				13EC03D81A849C1100671D7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13EC043F1A849E0E00671D7C /* Build configuration list for PBXNativeTarget "flatc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13EC04401A849E0E00671D7C /* Debug */,
+				13EC04411A849E0E00671D7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
